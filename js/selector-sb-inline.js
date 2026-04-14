@@ -1,10 +1,10 @@
 // selector-sb-inline.js — Supabase sync para selectores inline Foro 7
-// Slug: xv-anos-karla-bustamante | Storage key: xv_karla_bustamante
+// Slug: xv-anos-valentina-samantha | Storage key: xv_valentina_samantha
 (function () {
     const SUPABASE_URL  = 'https://nzpujmlienzfetqcgsxz.supabase.co';
     const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im56cHVqbWxpZW56ZmV0cWNnc3h6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ2ODYzMzYsImV4cCI6MjA5MDI2MjMzNn0.xl3lsb-KYj5tVLKTnzpbsdEGoV9ySnswH4eyRuyEH1s';
-    const EVENTO_SLUG   = 'xv-anos-karla-bustamante';
-    const SB_KEY        = 'xv_karla_bustamante';
+    const EVENTO_SLUG   = 'xv-anos-valentina-samantha';
+    const SB_KEY        = 'xv_valentina_samantha';
     const SB_H = { 'apikey': SUPABASE_ANON, 'Authorization': 'Bearer ' + SUPABASE_ANON, 'Content-Type': 'application/json' };
 
     const SESSION_KEY = 'foro7_sid';
