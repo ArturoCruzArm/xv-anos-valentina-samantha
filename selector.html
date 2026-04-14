@@ -253,7 +253,7 @@
 
     <header class="header">
         <h1 class="main-title">Selector de Fotos</h1>
-        <p class="subtitle">XV Años de Valentina Samantha</p>
+        <p class="subtitle">XV Años de Valentina Samantha García</p>
         <div class="instructions">
             <p><strong>Instrucciones:</strong> Haz clic en cada foto para seleccionar su uso. Puedes elegir múltiples opciones por foto.</p>
             <p style="margin-top:8px;"><strong>Categorías:</strong></p>
@@ -325,7 +325,7 @@
 
     <footer class="footer">
         <p>🌸 <strong>XV Años de Valentina Samantha Hernández</strong> 🌸</p>
-        <p style="margin-top:6px;font-size:0.85rem;color:#9B8A84;">18 de Mayo, 2026 · León, Guanajuato</p>
+        <p style="margin-top:6px;font-size:0.85rem;color:#9B8A84;">16 de Mayo, 2026 · León, Guanajuato</p>
     </footer>
 
     <script>
@@ -335,7 +335,7 @@
         let currentPhotoIndex = 0;
         let selections = typeof defaultSelections !== 'undefined' ? {...defaultSelections} : {};
 
-        const STORAGE_KEY = 'xv_karla_bustamante';
+        const STORAGE_KEY = 'xv_valentina_samantha';
         function loadSelections() {
             try {
                 const saved = localStorage.getItem(STORAGE_KEY);
@@ -428,7 +428,7 @@
 
         function exportarSeleccion() {
             const stats = updateStats();
-            let msg = '🌸 SELECCIÓN DE FOTOS - XV AÑOS KARLA BUSTAMANTE\n';
+            let msg = '🌸 SELECCIÓN DE FOTOS - XV AÑOS VALENTINA SAMANTHA\n';
             msg += '═══════════════════════════════════════════\n\n';
             msg += `📊 RESUMEN:\n`;
             msg += `   Total de fotos: ${photos.length}\n`;
