@@ -1,7 +1,7 @@
 // Lista de fotos generada automaticamente
 // XV Anos Valentina Samantha Hernandez
-// Total de fotos: 97
-// Generado: 2026-05-13 15:40:33
+// Total de fotos: 100
+// Generado: 2026-05-13 16:14:52
 
 const photos = [
     {
@@ -43,6 +43,21 @@ const photos = [
         "name": "8",
         "path": "imagenes/8.webp",
         "filename": "8.webp"
+    },
+    {
+        "name": "9",
+        "path": "imagenes/9.webp",
+        "filename": "9.webp"
+    },
+    {
+        "name": "10",
+        "path": "imagenes/10.webp",
+        "filename": "10.webp"
+    },
+    {
+        "name": "11",
+        "path": "imagenes/11.webp",
+        "filename": "11.webp"
     },
     {
         "name": "DSC_8423",
