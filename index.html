@@ -572,6 +572,27 @@
             line-height: 1.9;
         }
 
+        /* ===== PHOTO BREAK (full-width interstitial) ===== */
+        .photo-break {
+            position: relative; overflow: hidden;
+            max-height: 55vh;
+        }
+        .photo-break img {
+            width: 100%; height: 55vh;
+            object-fit: cover; display: block;
+            pointer-events: none; user-select: none;
+        }
+        .photo-break-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(255,248,240,0.6) 0%,
+                transparent 25%,
+                transparent 75%,
+                rgba(255,248,240,0.6) 100%
+            );
+        }
+
         /* ===== ENVELOPE OVERLAY ===== */
         #env-overlay {
             position: fixed; inset: 0; z-index: 9999;
@@ -779,6 +800,12 @@
         <div class="scroll-hint" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">❧</div>
     </section>
 
+    <!-- ===== FOTO 2 — Break ===== -->
+    <div class="photo-break reveal">
+        <img src="imagenes/2.webp" alt="Valentina" draggable="false">
+        <div class="photo-break-overlay"></div>
+    </div>
+
     <!-- ===== INTRO ===== -->
     <section class="intro-section" id="intro">
         <div class="section-inner reveal" style="text-align:center;">
@@ -799,7 +826,7 @@
 
     <!-- ===== FOTO #041 — Ken Burns Portrait ===== -->
     <div class="photo-kb-section" id="photo-kb">
-        <img class="photo-kb-img" src="imagenes/DSC_0916.webp" alt="Valentina" draggable="false">
+        <img class="photo-kb-img" src="imagenes/1.webp" alt="Valentina" draggable="false">
         <div class="photo-kb-overlay"></div>
         <div class="photo-kb-text" id="photoKbText">
             <p class="photo-kb-quote">Valentina</p>
@@ -826,7 +853,7 @@
                     <div class="event-address" data-campo="ceremonia-direccion">
                         Italia 303, Moderna<br>37220 León, Guanajuato
                     </div>
-                    <a href="https://maps.google.com/?q=Divina+Providencia+Le%C3%B3n+Guanajuato" target="_blank" class="map-btn" data-campo="ceremonia-maps">
+                    <a href="https://maps.app.goo.gl/G1gv2aBLa1fa4KK57" target="_blank" class="map-btn" data-campo="ceremonia-maps">
                         📍 Ver en mapa
                     </a>
                 </div>
@@ -839,7 +866,7 @@
                         León, Guanajuato<br>
                         <small>Detalles en Logística</small>
                     </div>
-                    <a href="https://maps.google.com/?q=Granja+Gregorio+Leon+Guanajuato" target="_blank" class="map-btn">
+                    <a href="https://maps.app.goo.gl/2xdqBAbeMzHc9zb6A" target="_blank" class="map-btn">
                         📍 Ver en mapa
                     </a>
                 </div>
@@ -847,10 +874,16 @@
         </div>
     </section>
 
+    <!-- ===== FOTO 4 — Break ===== -->
+    <div class="photo-break reveal">
+        <img src="imagenes/4.webp" alt="Valentina" draggable="false">
+        <div class="photo-break-overlay"></div>
+    </div>
+
     <!-- ===== FOTO #051 — Cortina Reveal ===== -->
     <div class="photo-curtain-section">
         <div class="photo-curtain-wrap" id="photo-curtain-wrap">
-            <img class="photo-curtain-img" id="photoCurtain" src="imagenes/DSC_0926.webp" alt="Valentina" draggable="false">
+            <img class="photo-curtain-img" id="photoCurtain" src="imagenes/3.webp" alt="Valentina" draggable="false">
             <div class="photo-curtain-overlay"></div>
             <div class="photo-curtain-text" id="photoCurtainText">
                 <p class="photo-curtain-title">Un sueño hecho realidad</p>
@@ -895,12 +928,20 @@
         </div>
     </section>
 
+    <!-- ===== FOTO 6 — Break ===== -->
+    <div class="photo-break reveal">
+        <img src="imagenes/6.webp" alt="Valentina" draggable="false">
+        <div class="photo-break-overlay"></div>
+    </div>
+
+    <div class="petal-divider">✿ ✾ ✿ ✾ ✿</div>
+
     <!-- ===== FOTO #082 — Polaroid 3D Tilt ===== -->
     <div class="photo-polaroid-section">
         <span class="photo-polaroid-tag">Un Momento Eterno</span>
         <h2 class="photo-polaroid-heading reveal">El Vestido de sus Sueños</h2>
         <div class="polaroid-frame reveal" id="polaroidFrame">
-            <img src="imagenes/DSC_0959.webp" alt="Valentina">
+            <img src="imagenes/5.webp" alt="Valentina">
             <p class="polaroid-caption">Valentina 🌸</p>
         </div>
         <p class="photo-polaroid-sub reveal delay-1">
@@ -908,6 +949,14 @@
             todo listo para el día más especial.
         </p>
     </div>
+
+    <!-- ===== FOTO 7 — Break ===== -->
+    <div class="photo-break reveal">
+        <img src="imagenes/7.webp" alt="Valentina" draggable="false">
+        <div class="photo-break-overlay"></div>
+    </div>
+
+    <div class="petal-divider">✿ ✾ ✿ ✾ ✿</div>
 
     <!-- RSVP -->
     <section id="rsvp">
@@ -955,6 +1004,12 @@
             </div>
         </div>
     </section>
+
+    <!-- ===== FOTO 8 — Break ===== -->
+    <div class="photo-break reveal">
+        <img src="imagenes/8.webp" alt="Valentina" draggable="false">
+        <div class="photo-break-overlay"></div>
+    </div>
 
     <!-- ===== FOOTER ===== -->
     <footer>
