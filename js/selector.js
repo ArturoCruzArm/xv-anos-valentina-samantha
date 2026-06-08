@@ -2,6 +2,11 @@
 // GLOBAL VARIABLES
 // ========================================
 const photos = ['imagenes/1.webp', 'imagenes/2.webp', 'imagenes/3.webp', 'imagenes/4.webp', 'imagenes/5.webp', 'imagenes/6.webp', 'imagenes/7.webp', 'imagenes/8.webp', 'imagenes/9.webp', 'imagenes/10.webp', 'imagenes/11.webp', 'imagenes/DSC_8423.webp', 'imagenes/DSC_8424.webp', 'imagenes/DSC_8425.webp', 'imagenes/DSC_8426.webp', 'imagenes/DSC_8427.webp', 'imagenes/DSC_8428.webp', 'imagenes/DSC_8429.webp', 'imagenes/DSC_8430.webp', 'imagenes/DSC_8431.webp', 'imagenes/DSC_8432.webp', 'imagenes/DSC_8433.webp', 'imagenes/DSC_8434.webp', 'imagenes/DSC_8435.webp', 'imagenes/DSC_8436.webp', 'imagenes/DSC_8437.webp', 'imagenes/DSC_8438.webp', 'imagenes/DSC_8439.webp', 'imagenes/DSC_8440.webp', 'imagenes/DSC_8441.webp', 'imagenes/DSC_8442.webp', 'imagenes/DSC_8444.webp', 'imagenes/DSC_8445.webp', 'imagenes/DSC_8446.webp', 'imagenes/DSC_8447.webp', 'imagenes/DSC_8448.webp', 'imagenes/DSC_8449.webp', 'imagenes/DSC_8450.webp', 'imagenes/DSC_8451.webp', 'imagenes/DSC_8452.webp', 'imagenes/DSC_8453.webp', 'imagenes/DSC_8454.webp', 'imagenes/DSC_8455.webp', 'imagenes/DSC_8456.webp', 'imagenes/DSC_8457.webp', 'imagenes/DSC_8458.webp', 'imagenes/DSC_8459.webp', 'imagenes/DSC_8460.webp', 'imagenes/DSC_8461.webp', 'imagenes/DSC_8462.webp', 'imagenes/DSC_8463.webp', 'imagenes/DSC_8464.webp', 'imagenes/DSC_8465.webp', 'imagenes/DSC_8466.webp', 'imagenes/DSC_8467.webp', 'imagenes/DSC_8468.webp', 'imagenes/DSC_8469.webp', 'imagenes/DSC_8470.webp', 'imagenes/DSC_8471.webp', 'imagenes/DSC_8472.webp', 'imagenes/DSC_8473.webp', 'imagenes/DSC_8474.webp', 'imagenes/DSC_8475.webp', 'imagenes/DSC_8476.webp', 'imagenes/DSC_8477.webp', 'imagenes/DSC_8478.webp', 'imagenes/DSC_8479.webp', 'imagenes/DSC_8480.webp', 'imagenes/DSC_8481.webp', 'imagenes/DSC_8482.webp', 'imagenes/DSC_8483.webp', 'imagenes/DSC_8484.webp', 'imagenes/DSC_8485.webp', 'imagenes/DSC_8486.webp', 'imagenes/DSC_8487.webp', 'imagenes/DSC_8488.webp', 'imagenes/DSC_8489.webp', 'imagenes/DSC_8490.webp', 'imagenes/DSC_8491.webp', 'imagenes/DSC_8492.webp', 'imagenes/DSC_8493.webp', 'imagenes/DSC_8494.webp', 'imagenes/DSC_8495.webp', 'imagenes/DSC_8496.webp', 'imagenes/DSC_8497.webp', 'imagenes/DSC_8498.webp', 'imagenes/DSC_8499.webp', 'imagenes/DSC_8500.webp', 'imagenes/DSC_8501.webp', 'imagenes/DSC_8502.webp', 'imagenes/DSC_8503.webp', 'imagenes/DSC_8504.webp', 'imagenes/DSC_8505.webp', 'imagenes/DSC_8506.webp', 'imagenes/DSC_8507.webp', 'imagenes/DSC_8508.webp', 'imagenes/DSC_8509.webp', 'imagenes/DSC_8510.webp', 'imagenes/DSC_8511.webp', 'imagenes/DSC_8512.webp'];
+// Thumbnail helper: usa thumb/ en grid para ahorrar RAM en moviles
+function getThumbPath(fullPath) {
+    return fullPath.replace('imagenes/', 'imagenes/thumb/');
+}
+
 const STORAGE_KEY = 'xv_valentina_samantha_photo_selections';
 const LIMITES = {
     ampliacion: null,
@@ -158,7 +163,7 @@ function renderGallery() {
         const displayNumber = `Foto ${index + 1}`;
         const mediaHTML = `
             <div class="photo-image-container">
-                <img src="${photo}" alt="${displayNumber}" loading="lazy">
+                <img src="${getThumbPath(photo)}" alt="${displayNumber}" loading="lazy">
             </div>
         `;
 
